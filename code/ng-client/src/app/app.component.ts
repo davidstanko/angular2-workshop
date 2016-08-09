@@ -8,5 +8,5 @@ import {ROUTER_DIRECTIVES} from '@angular/router';
   templateUrl: 'app.component.html'
 })
 export class AppComponent {
-  title = 'app works!';
+  title = 'Hello MidwestJS!';
 }
