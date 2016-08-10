@@ -32,7 +32,7 @@ export class TimesheetListComponent implements OnInit {
   }
 
   openTimesheet(timesheet) {
-    console.log('wire me here!');
+    this.router.navigateByUrl(`/home/timesheets/${timesheet._id}`);
   }
 
 

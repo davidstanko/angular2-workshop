@@ -4,6 +4,7 @@ import { LoginComponent } from './login';
 import { NavigationComponent } from './navigation';
 import { ProjectListComponent } from './project-list';
 import { EmployeeListComponent } from './employee-list';
+import {TimesheetComponent} from './timesheet/timesheet.component';
 
 export const routes: RouterConfig = [
   {
@@ -12,7 +13,8 @@ export const routes: RouterConfig = [
     children: [
       { path: 'projects', component: ProjectListComponent, pathMatch: 'full'},
       { path: 'employees', component: EmployeeListComponent, pathMatch: 'full'},
-      { path: 'timesheets', component: TimesheetListComponent, pathMatch: 'full' }
+      { path: 'timesheets', component: TimesheetListComponent, pathMatch: 'full' },
+      { path: 'timesheets/:id', component: TimesheetComponent }
     ]
   },
   { path: 'login', component: LoginComponent },
