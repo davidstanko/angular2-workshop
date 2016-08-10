@@ -21,8 +21,5 @@ export class TimeUnitsComponent {
 
   constructor(private router: Router) {
   }
-
-  logTime() {
-    this.router.navigateByUrl(`/home/timesheets/${this.timesheetId}/entry`);
-  }
+  
 }
