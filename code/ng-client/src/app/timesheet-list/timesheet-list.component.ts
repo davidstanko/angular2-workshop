@@ -25,7 +25,6 @@ export class TimesheetListComponent implements OnInit {
     this.format = 'MM/dd/yy';
   }
 
-
   ngOnInit() {
     this.timesheetService.getTimesheets(this.identityService.user).subscribe((timesheets) => {
       this.timesheets = timesheets;
@@ -33,11 +32,8 @@ export class TimesheetListComponent implements OnInit {
   }
 
   openTimesheet(timesheet) {
-    this.router.navigateByUrl(`/home/timesheets/${timesheet._id}`);
+    console.log('wire me here!');
   }
 
-  add() {
-    this.router.navigateByUrl('/home/timesheets/new');
-  }
 
 }
