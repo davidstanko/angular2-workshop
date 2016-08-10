@@ -21,5 +21,4 @@ export class TimeUnitsComponent {
 
   constructor(private router: Router) {
   }
-  
 }
