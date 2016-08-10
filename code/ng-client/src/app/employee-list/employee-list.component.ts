@@ -26,5 +26,8 @@ export class EmployeeListComponent implements OnInit {
     });
   }
 
+  add() {
+    this.router.navigateByUrl('/home/employees/new');
+  }
 
 }

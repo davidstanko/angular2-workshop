@@ -35,9 +35,4 @@ export class TimesheetListComponent implements OnInit {
   openTimesheet(timesheet) {
     this.router.navigateByUrl(`/home/timesheets/${timesheet._id}`);
   }
-
-  add() {
-    this.router.navigateByUrl('/home/timesheets/new');
-  }
-
 }
