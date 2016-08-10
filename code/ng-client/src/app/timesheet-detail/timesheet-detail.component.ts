@@ -12,7 +12,7 @@ import {TimesheetCompletePipe} from './timesheet-complete.pipe';
   templateUrl: 'timesheet-detail.component.html',
   styleUrls: ['timesheet-detail.component.scss'],
   directives: [MD_CARD_DIRECTIVES, MD_LIST_DIRECTIVES, MD_BUTTON_DIRECTIVES],
-  pipes: [TimesheetCompletePipe]
+  pipes: []
 })
 export class TimesheetDetailComponent implements OnInit {
 
