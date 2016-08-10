@@ -15,13 +15,4 @@ export class EmployeeService {
       });
     });
   }
-
-  save(employee: Employee) {
-    return Observable.create((observer) => {
-      this.http.post('/users', employee).subscribe((response) => {
-        observer.next(response.json());
-      });
-    });
-  }
-
 }
