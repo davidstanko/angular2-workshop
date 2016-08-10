@@ -36,4 +36,8 @@ export class TimesheetListComponent implements OnInit {
     this.router.navigateByUrl(`/home/timesheets/${timesheet._id}`);
   }
 
+  add() {
+    this.router.navigateByUrl('/home/timesheets/new');
+  }
+
 }
