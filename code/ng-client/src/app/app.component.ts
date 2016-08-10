@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import {ROUTER_DIRECTIVES} from '@angular/router';
+import {ProjectListComponent} from './project-list/project-list.component';
 
 @Component({
   selector: 'app-root',
-  directives: [ROUTER_DIRECTIVES],
+  directives: [ProjectListComponent],
   styleUrls: ['app.component.scss'],
   templateUrl: 'app.component.html'
 })
