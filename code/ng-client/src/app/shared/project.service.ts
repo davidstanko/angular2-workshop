@@ -16,11 +16,4 @@ export class ProjectService {
     });
   }
 
-  save(project: Project) {
-    return Observable.create((observer) => {
-      this.http.post('/projects', project).subscribe((response) => {
-        observer.next(response.json());
-      });
-    });
-  }
 }
