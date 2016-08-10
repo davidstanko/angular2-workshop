@@ -8,7 +8,6 @@ import { ProjectNewComponent } from './project-new/project-new.component';
 import { EmployeeNewComponent } from './employee-new/employee-new.component';
 import { TimesheetNewComponent } from './timesheet-new/timesheet-new.component';
 import { TimesheetComponent } from './timesheet/timesheet.component';
-import { TimesheetEntryComponent } from './timesheet-entry/timesheet-entry.component';
 
 export const routes: RouterConfig = [
   {
@@ -21,8 +20,7 @@ export const routes: RouterConfig = [
       { path: 'employees/new', component: EmployeeNewComponent },
       { path: 'timesheets', component: TimesheetListComponent, pathMatch: 'full' },
       { path: 'timesheets/new', component: TimesheetNewComponent },
-      { path: 'timesheets/:id', component: TimesheetComponent },
-      { path: 'timesheets/:id/entry', component: TimesheetEntryComponent }
+      { path: 'timesheets/:id', component: TimesheetComponent }
     ]
   },
   { path: 'login', component: LoginComponent },
