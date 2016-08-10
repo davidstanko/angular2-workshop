@@ -7,6 +7,7 @@ export * from './employee.service';
 export * from './Employee';
 export * from './Timesheet';
 export * from './TimeUnit';
+export * from './timeunit.service';
 
 import {ExtHttp} from './extHttp.service';
 import {LoginService} from './login.service';
