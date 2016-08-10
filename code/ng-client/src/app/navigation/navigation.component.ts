@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ROUTER_DIRECTIVES, Router } from '@angular/router';
 import { MdButton } from '@angular2-material/button/button';
 import { MdToolbar } from '@angular2-material/toolbar/toolbar';
-import { IdentityService, LocalStorage, AUTH_TOKEN_NAME } from '../auth';
+import { IdentityService, LocalStorage } from '../auth';
 import { User } from '../auth/user';
 
 @Component({
@@ -15,7 +15,7 @@ export class NavigationComponent implements OnInit {
 
   user: User;
 
-  constructor(private identityService: IdentityService, private storage: LocalStorage, private router: Router) {
+  constructor(private identityService: IdentityService, private router: Router) {
   }
 
   ngOnInit() {
@@ -30,8 +30,6 @@ export class NavigationComponent implements OnInit {
   }
 
   logout() {
-    this.identityService.clear();
-    this.storage.removeItem(AUTH_TOKEN_NAME);
-    this.router.navigateByUrl('/login');
+    console.log('implement me!');
   }
 }

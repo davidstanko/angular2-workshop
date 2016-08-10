@@ -6,7 +6,7 @@ import {ComponentRef} from '@angular/core';
 
 import { AppComponent, environment } from './app/';
 import { APP_ROUTER_PROVIDERS } from './app/app.routes';
-import {LocalStorage, AUTH_TOKEN_NAME} from './app/auth';
+import {LocalStorage} from './app/auth';
 
 import {APP_AUTH_PROVIDERS} from './app/auth';
 import {APP_PROVIDERS} from './app/shared';
@@ -33,10 +33,7 @@ bootstrap(AppComponent, [
     let loginService: LoginService = appRef.injector.get(LoginService);
     storage.initStorage(window.localStorage);
 
-    const token = storage.getItem(AUTH_TOKEN_NAME);
-    if (token) {
-      loginService.loadUser(token);
-    }
+    loginService.loadUser('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJfaWQiOiI3U3JQN1BDckg2YzlReXdhIiwidXNlcm5hbWUiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AbWl4dGFwZS5jb20iLCJhZG1pbiI6dHJ1ZSwiZmlyc3ROYW1lIjoiQWRtaW4iLCJsYXN0TmFtZSI6IlVzZXIifQ.90H4DwRUoTcY6N8Xfe6FmN2sGnTpTrgJn3zPgfa7Rso');
   },
   error => console.log(error)
 );
