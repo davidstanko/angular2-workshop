@@ -15,7 +15,9 @@ export class ProjectListComponent implements OnInit {
 
   ngOnInit() {
     this.projects = [
-      new Project({name: 'Some Project', description: 'So cool'})
+      new Project({name: 'Some Project', description: 'So cool'}),
+      new Project({name: 'Another Project', description: 'This one is cool too'}),
+      new Project({name: 'Bad Project', description: 'This one sucks'})
     ];
   }
 
